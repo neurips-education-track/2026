@@ -97,6 +97,7 @@ a { color: inherit; }
   cursor: pointer;
 }
 .btn:hover { transform: translateY(-2px); }
+.btn .arrow { display: inline-block; line-height: 1; transform: translateY(0.5px); }
 .btn-small { padding: 9px 16px; font-size: 0.9rem; }
 .btn-primary { background: var(--accent); color: #fff; box-shadow: 0 12px 24px -12px rgba(244, 117, 12, .8); }
 .btn-primary:hover { background: #e2670a; }
