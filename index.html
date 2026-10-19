@@ -24,6 +24,7 @@
         <li><a href="#submit">Submit</a></li>
         <li><a href="#attend">Attend</a></li>
         <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
       </ul>
     </nav>
   </header>
@@ -206,80 +207,95 @@
     </section>
 
     <!-- SPEAKERS -->
-    <section class="section" id="speakers">
+    <section class="section" id="speakers" aria-labelledby="speakers-heading">
       <div class="section-head">
-        <p class="kicker">Invited speakers</p>
-        <h2>Speakers announced soon.</h2>
+        <p class="kicker">Keynote speakers</p>
+        <h2 id="speakers-heading">Meet our keynote speakers.</h2>
       </div>
-      <p class="prose speakers-note">
-        We're assembling a line-up of leading researchers, educators and science
-        communicators in AI. Check back soon for more details.
-      </p>
       <div class="speaker-grid">
-        <!-- Speaker template: copy this card and fill in details once a speaker confirms.
-        <article class="speaker">
-          <img class="speaker-photo" src="speakers/name.jpg" alt="Speaker Name" />
-          <h3 class="speaker-name">Speaker Name</h3>
-          <p class="speaker-affil">Affiliation</p>
-          <p class="speaker-topic">Concept: topic they'll teach</p>
+        <article class="speaker" aria-labelledby="rachel-thomas-name">
+          <img class="speaker-photo" src="speakers/rachel-thomas.jpg" alt="Rachel Thomas" width="160" height="160" loading="lazy" decoding="async" />
+          <h3 class="speaker-name" id="rachel-thomas-name">Rachel Thomas</h3>
+          <p class="speaker-affil">Answer.AI · Co-founder of fast.ai</p>
+          <div class="speaker-bio">
+            <p>Rachel Thomas was co-founder of fast.ai, which created the <a href="https://course.fast.ai/">Practical Deep Learning for Coders</a> course. She now works on R&amp;D at Answer.AI. Previously, she was the founding director of the USF Center for Applied Data Ethics.</p>
+            <p>Rachel earned her mathematics PhD at Duke, was selected by Forbes as one of 20 Incredible Women in AI, and was an early engineer at Uber. You can find her writing at <a href="https://www.fast.ai/">fast.ai</a> and <a href="https://rachel.fast.ai/">rachel.fast.ai</a>.</p>
+          </div>
         </article>
-        -->
-        <article class="speaker speaker-placeholder" aria-hidden="true">
-          <div class="speaker-photo silhouette"></div>
-          <h3 class="speaker-name">To be announced</h3>
-          <p class="speaker-affil">&nbsp;</p>
-        </article>
-        <article class="speaker speaker-placeholder" aria-hidden="true">
-          <div class="speaker-photo silhouette"></div>
-          <h3 class="speaker-name">To be announced</h3>
-          <p class="speaker-affil">&nbsp;</p>
-        </article>
-        <article class="speaker speaker-placeholder" aria-hidden="true">
-          <div class="speaker-photo silhouette"></div>
-          <h3 class="speaker-name">To be announced</h3>
-          <p class="speaker-affil">&nbsp;</p>
-        </article>
-        <article class="speaker speaker-placeholder" aria-hidden="true">
-          <div class="speaker-photo silhouette"></div>
-          <h3 class="speaker-name">To be announced</h3>
-          <p class="speaker-affil">&nbsp;</p>
+        <article class="speaker" aria-labelledby="ben-leong-name">
+          <img class="speaker-photo" src="speakers/ben-leong.jpg" alt="Ben Leong" width="160" height="160" loading="lazy" decoding="async" />
+          <h3 class="speaker-name" id="ben-leong-name">Ben Leong</h3>
+          <p class="speaker-affil">National University of Singapore</p>
+          <div class="speaker-bio">
+            <p>Dr Ben Leong is an Associate Professor of Computer Science at the National University of Singapore (NUS), with research interests in networking, distributed systems, and the application of AI in education.</p>
+            <p>He has received several teaching awards, including the NUS Outstanding Educator Award in 2015, and previously chaired the Computer Science Department Standing Teaching Committee. He has held various leadership roles, including Director of the Experimental Systems and Technology Laboratory at the Ministry of Education and Director of the Centre for Computing for Social Good &amp; Philanthropy at NUS.</p>
+            <p>From 2020 to 2025, he served as Chief Data Officer of AI Singapore, the national AI programme. He is Director of the AI Centre for Educational Technologies (AICET), where his team develops AI-powered software platforms for education.</p>
+          </div>
         </article>
       </div>
     </section>
 
     <!-- SCHEDULE -->
-    <!--<section class="section" id="schedule">
+    <section class="section" id="schedule" aria-labelledby="schedule-heading">
       <div class="section-head">
         <p class="kicker">The day at a glance</p>
-        <h2>A single, full day - before the main conference week.</h2>
+        <h2 id="schedule-heading">Schedule.</h2>
+      </div>
+      <div class="prose schedule-note">
+        <p><strong>Monday 7 December 2026 · All times are Sydney local time.</strong></p>
+        <p class="schedule-announcement">Schedule is subject to change. Keynote and spotlight talk titles will be announced soon.</p>
       </div>
       <ol class="timeline">
         <li class="tl-item tl-break">
-          <span class="tl-time">08:00 – 09:00</span>
-          <span class="tl-body"><strong>Welcome coffee</strong><em>Official</em></span>
+          <span class="tl-time">08:00–09:00</span>
+          <span class="tl-body"><strong>Welcome coffee</strong><em>Coffee is available until 09:00. The programme begins at 08:30.</em></span>
         </li>
         <li class="tl-item">
-          <span class="tl-time">09:00</span>
-          <span class="tl-body"><strong>Track begins</strong><em>Morning sessions</em></span>
-        </li>
-        <li class="tl-item tl-break">
-          <span class="tl-time">12:00 – 14:00</span>
-          <span class="tl-body"><strong>Lunch</strong><em>Break</em></span>
+          <span class="tl-time">08:30–08:40</span>
+          <span class="tl-body"><strong>Opening remarks</strong></span>
         </li>
         <li class="tl-item">
-          <span class="tl-time">14:00</span>
-          <span class="tl-body"><strong>Afternoon sessions</strong><em>Resume</em></span>
+          <span class="tl-time">08:40–09:30</span>
+          <span class="tl-body"><strong>Morning keynote</strong><em>Including Q&amp;A</em></span>
+        </li>
+        <li class="tl-item">
+          <span class="tl-time">09:30–09:50</span>
+          <span class="tl-body"><strong>Icebreaker: networking bingo</strong></span>
+        </li>
+        <li class="tl-item">
+          <span class="tl-time">09:50–10:50</span>
+          <span class="tl-body"><strong>Spotlight talks · Session 1</strong></span>
+        </li>
+        <li class="tl-item">
+          <span class="tl-time">11:00–12:30</span>
+          <span class="tl-body"><strong>Posters and demos · Session 1</strong><em>Posters can continue through lunch.</em></span>
         </li>
         <li class="tl-item tl-break">
-          <span class="tl-time">15:00 – 15:30</span>
-          <span class="tl-body"><strong>Afternoon coffee</strong><em>Official</em></span>
+          <span class="tl-time">12:00–13:00</span>
+          <span class="tl-body"><strong>Lunch</strong></span>
+        </li>
+        <li class="tl-item">
+          <span class="tl-time">13:00–13:10</span>
+          <span class="tl-body"><strong>Morning recap</strong></span>
+        </li>
+        <li class="tl-item">
+          <span class="tl-time">13:10–14:00</span>
+          <span class="tl-body"><strong>Afternoon keynote</strong><em>Including Q&amp;A</em></span>
+        </li>
+        <li class="tl-item">
+          <span class="tl-time">14:00–15:00</span>
+          <span class="tl-body"><strong>Spotlight talks · Session 2</strong></span>
+        </li>
+        <li class="tl-item">
+          <span class="tl-time">15:00–16:30</span>
+          <span class="tl-body"><strong>Posters and demos · Session 2</strong><em>Coffee is available from 15:00 to 15:30.</em></span>
         </li>
         <li class="tl-item tl-end">
-          <span class="tl-time">16:30</span>
-          <span class="tl-body"><strong>Track ends</strong><em>Wrap-up</em></span>
+          <span class="tl-time">16:15–16:30</span>
+          <span class="tl-body"><strong>Closing remarks</strong><em>During the final poster session.</em></span>
         </li>
       </ol>
-    </section> -->
+    </section>
 
     <!-- REPOSITORY / CTA -->
     <section class="section repo">
