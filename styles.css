@@ -308,9 +308,10 @@ a { color: inherit; }
   line-height: 1.5;
 }
 .session-time { color: var(--ink-soft); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
-.poster-details { margin-top: 14px; }
-.poster-details summary { width: fit-content; cursor: pointer; color: var(--ocean-deep); font-weight: 600; }
-.poster-details summary:hover { text-decoration: underline; text-underline-offset: 3px; }
+.poster-details, .talk-details { margin-top: 14px; }
+.poster-details summary, .talk-details summary { width: fit-content; cursor: pointer; color: var(--ocean-deep); font-weight: 600; }
+.poster-details summary:hover, .talk-details summary:hover { text-decoration: underline; text-underline-offset: 3px; }
+.talk-details p { margin: 16px 0 0; color: var(--ink-soft); font-size: 0.95rem; line-height: 1.5; }
 .poster-list { margin: 16px 0 0; padding-left: 22px; font-size: 0.95rem; line-height: 1.5; }
 .poster-list li { padding-left: 4px; }
 .poster-list li + li { margin-top: 12px; }
